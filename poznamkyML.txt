@@ -1,0 +1,96 @@
+similarity learning:
+--regession: pairs are given with similarity, we are learning a function that tkes two points and learns the similarity
+--mbalaz sim triplet learner (is y more similar to x than x is to z)
+-- triplet similairtyt learning(x,y) input is x,y,z f(x,y)>f(x,z) similar to mbalaz triplet learning
+
+metric learning:-> shold have triangle inequality, distance is basically inverse of similarity, low distance means high similarity
+
+triplet loss
+  -- many different version L(A,P,N) distance from furthest P and closest N must be at least alpha P-N+alfa, but take max for p and min for N
+  -- hard negatives mining
+
+learge margin nearest neighbour
+  -- simalr to tripplet loss, penalize for too close Negatives, and minimize min sum dP+  min sum max(0,1-N)
+
+
+quadruplet d(X,y)<alpha+d(z,w)  blue pair is good red pair is bad
+
+perlexity: 2^entropy, how vell does distribution model smaple
+
+http://researchers.lille.inria.fr/abellet/talks/metric_learning_tutorial_ECML_PKDD.pdf
+
+-- kernel metric learning
+-- learn multiple metrics
+
+
+
+book: metric learning: morgan claypool
+arXiv1306.6709
+
+--deep visual semantic embedding model
+DeVise
+
+
+stationarity is considered in time series analysis, b
+stationarity is part of iid
+--------Meta learning
+- can mean anything 
+  for example just learning what parameters of optimizer to use, or what should be initial parameters
+  -- multiple iteration of training can be seen as one meta-step, so gradient for trainer can be computed
+  -- can learn entire update rule
+  -- search for hyperparameters could be seen as meta learning
+
+https://github.com/salesforce/awd-lstm-lm
+
+-- self supervised learning
+
+--pixelCNN
+
+--NCEloss
+
+--instance discriminatioin-simclr MoCo
+--contrastive predictive coding
+
+byol
+bert
+
+F1:
+micro=per class average, macro=sum, weighted
+kappa: aggree vs disagree
+
+=============jupyter
+pip install jupyter_contrib_nbextensions
+move selected cells:alt+up/down
+hinterland:autocompletion
+runtools:run multiple cells
+search files:~
+hide input oputput
+snippets:
+table of content
+Scratchpad
+codefolding
+variable inspector
+pip install jupyterthemes
+!jt -t onedork -T -N
+
+-- 
+code pretifier  --needs pip install yap
+?tabnine
+collapsible headings
+notify- sends notification in browser
+autopep8 - needs pip install autopep8
+Execut time
+hgihlighter:
+codefolding
+
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator
+start JupyterLab with the --collaborative flag.
+https://github.com/jupyterlab-contrib/jupyterlab-link-share
+pip install jupyterlab-link-share
+
+
+data lake:
+delta lake
+edge aie
